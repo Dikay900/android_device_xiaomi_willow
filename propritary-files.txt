@@ -5,8 +5,6 @@ vendor/etc/init/vendor.nxp.hardware.nfc@1.1-service.rc
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/permissions/com.android.nfc_extras.xml
-vendor/etc/permissions/com.nxp.mifare.xml
 vendor/etc/sn100u_nfcon.pnscr
 vendor/lib/hw/nfc_nci.nqx.default.so
 vendor/lib/libp61-jcop-kit.so
