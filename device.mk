@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     ls_nq_client \
     nfc_nci.nqx.default \
     NQNfcNci \
+    nqnfcee_access.xml \
     nqnfcse_access.xml \
     Tag \
     se_nq_extn_client \
