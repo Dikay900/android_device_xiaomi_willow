@@ -28,5 +28,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Kernel
+TARGET_KERNEL_CONFIG := vendor/willow-perf_defconfig
+
 # NFC
 TARGET_USES_NQ_NFC := true
