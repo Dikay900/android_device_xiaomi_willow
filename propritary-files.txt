@@ -2,9 +2,6 @@
 vendor/bin/hw/vendor.nxp.hardware.nfc@1.1-service
 vendor/bin/nqnfcinfo
 vendor/etc/init/vendor.nxp.hardware.nfc@1.1-service.rc
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-nxp.conf
 vendor/etc/sn100u_nfcon.pnscr
 vendor/etc/sn100u_bootup.pnscr
 vendor/etc/sn100u_ese_disableIso.pnscr
@@ -23,6 +20,7 @@ vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
 vendor/lib/hw/nfc_nci.nqx.default.so
 vendor/lib/libp61-jcop-kit.so
+vendor/lib/libsn100u_fw.so
 vendor/lib/nfc_nci.nqx.default.hw.so
 vendor/lib64/hw/nfc_nci.nqx.default.so
 vendor/lib64/libp61-jcop-kit.so
