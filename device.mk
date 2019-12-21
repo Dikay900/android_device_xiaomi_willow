@@ -44,5 +44,11 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     vendor.nxp.hardware.nfc@1.1-service
 
+# NFC config files
+PRODUCT_COPY_FILES += \
+    device/xiaomi/willow/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    device/xiaomi/willow/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    device/xiaomi/willow/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf
+
 # Inherit from sm6125-common
 $(call inherit-product, device/xiaomi/sm6125-common/sm6125-common.mk)
