@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Lights
@@ -34,14 +35,27 @@ PRODUCT_PACKAGES += \
     com.gsma.services.nfc \
     com.nxp.nfc.nq \
     jcos_nq_client \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
     libp61-jcop-kit \
     ls_nq_client \
     nfc_nci.nqx.default \
-    NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    Tag \
     se_nq_extn_client \
+
+PRODUCT_PACKAGES += \
+    NQNfcNci \
+    SecureElement \
+    Tag
+
+# NFC Main HALs
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1:64 \
+    vendor.nxp.hardware.nfc@1.0 \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc@1.0 \
     vendor.nxp.hardware.nfc@1.1-service
 
 # NFC config files
