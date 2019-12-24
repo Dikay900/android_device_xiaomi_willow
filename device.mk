@@ -38,11 +38,9 @@ PRODUCT_PACKAGES += \
     libnqnfc-nci \
     libnqnfc_nci_jni \
     libp61-jcop-kit \
-    ls_nq_client \
     nfc_nci.nqx.default \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    se_nq_extn_client \
 
 PRODUCT_PACKAGES += \
     NQNfcNci \
