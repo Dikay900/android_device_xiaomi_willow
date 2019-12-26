@@ -31,35 +31,18 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.gsma.services.nfc \
-    com.nxp.nfc.nq \
-    jcos_nq_client \
-    libnqnfc-nci \
-    libnqnfc_nci_jni \
-    libp61-jcop-kit \
-    nfc_nci.nqx.default \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
-
-PRODUCT_PACKAGES += \
-    NQNfcNci \
+    android.hardware.nfc@1.1-service \
+    NfcNci \
+    Tag \
     SecureElement \
-    Tag
+    android.hardware.secure_element@1.0-service
 
-# NFC Main HALs
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0 \
-    android.hardware.nfc@1.1:64 \
-    vendor.nxp.hardware.nfc@1.0 \
-    vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfc@1.0 \
-    vendor.nxp.hardware.nfc@1.1-service
+PRODUCT_COPY_FILES += \
+    device/xiaomi/willow/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+    device/xiaomi/willow/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # NFC config files
 PRODUCT_COPY_FILES += \
-    device/xiaomi/willow/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    device/xiaomi/willow/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     device/xiaomi/willow/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf
 
 # Inherit from sm6125-common

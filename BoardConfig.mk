@@ -30,6 +30,3 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/willow-perf_defconfig
-
-# NFC
-TARGET_USES_NQ_NFC := true
