@@ -17,10 +17,10 @@ PRODUCT_MODEL := Redmi Note 8T
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="willow-user 9 PKQ1.190616.001 V10.3.1.0.PCXMIXM release-keys" \
+    PRIVATE_BUILD_DESC="willow-user 9 PKQ1.190616.001 V11.0.7.0.PCXEUXM release-keys" \
     PRODUCT_NAME="willow" \
     TARGET_DEVICE="willow"
 
-BUILD_FINGERPRINT := "xiaomi/willow/willow:9/PKQ1.190616.001/V10.3.1.0.PCXMIXM:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/willow/willow:9/PKQ1.190616.001/V11.0.7.0.PCXEUXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
